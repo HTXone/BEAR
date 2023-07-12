@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#"
+     xml:base="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value_Generated_by_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value_Generated_by_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value"/>
+        <rdfs:comment>Describes which Service Value generates the relationship for the specified Business process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Enterprise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Enterprise">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Organization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describes which Enterprise is related to the specified Business.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Organization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Organization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Describe which organisation is associated with the specified Business.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business所属Field -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Belongs_to_Field">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:comment>Describes the relationship between which Field is the category to which the specified Business belongs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Required_Products -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Required_Products">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>The relationship that describes which Product is the supporting component for a given Business process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise_Locate_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise_Locate_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization_Locate_in"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Location"/>
+        <rdfs:comment>Description specifies the coordinates of the physical space in which Enterprise is located.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Corporate_Fixing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Corporate_Fixing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise所属Field -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise_Belongs_to_Field">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#In_The_Field_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:comment>Describes the relationship that specifies which particular Field Enterprise belongs to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document_Association_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document_Association_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Describes the relationship between the specified File and the Business.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People_Participate_in_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People_Participate_in_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Description specifies which Business process People are involved in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People_Affiliated_Organisations -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People_Affiliated_Organisations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Description Specifies the relationship of the organisation to which People belongs.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy_Provisions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy_Provisions">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Relationship describing which Business is bound by the specified Policy</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Go_Online -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Go_Online">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#APP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Exchange_Service_Value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Exchange_Service_Value">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Describe the existence of a Service Value exchange relationship between two Businesses.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Using_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Using_Business">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Using_Product -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Using_Product">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Consumers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Consumers">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Enterprise"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>A relationship that describes which Enterprise is using the specified Business to achieve the goal.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#依赖Product -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Dependency_Product">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>Describe the dependencies between two Products</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Dependency decument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Dependency_Document">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:comment>Describes which Document is specified as the relationship on which Business executes.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enter_and_Garrison -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enter_and_Garrison">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Participation_in_Projects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Participation_in_Projects">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Participate_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Project"/>
+        <rdfs:comment>Description specifies which project Enterprise is involved in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Shareholding -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Shareholding">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Publish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Publish">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Collaborative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Collaborative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#子Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#SubBusiness">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Describe the parent-child relationship between two Business</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#SubField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#SubField">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Field"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:comment>Describe the parent-child relationship between two Fields</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Implementation_Projects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Implementation_Projects">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provide_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Project"/>
+        <rdfs:comment>Describes which project is being implemented by the specified Enterprise.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Realisation_Techniques -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Realisation_Techniques">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Develop_Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Technical"/>
+        <rdfs:comment>Describe which technology is implemented by the given Enterprise.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Work_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Work_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People_Affiliated_Organisations"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describe the relationship of the Enterprise in which the People work.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#开发APP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Developing_APP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Develop_Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#APP"/>
+        <rdfs:comment>描述哪个APP被指定Enterprise所开发</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Developing_Products -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Developing_Products">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Open_Service -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Open_Service">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Generate_Document -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Generate_Document">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:comment>Describes which File is generated during the specified Business process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#成立部门 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Establishment_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#投资 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Investors">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#探索 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Discovery">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#控股 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Holdings">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describe the equity control relationship between two Enterprises</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#提供者 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provider">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Affiliates_Enterprise"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describes the relationship of which Enterprise is the Provider of the specified Business.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#收购 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Buy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#政府约束Enterprise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Government_Constraints_Enterprise">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Government"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#旗下Enterprise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Under_The_Name_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#注册 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Register">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Agency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#注册于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Registered_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Relationships describing which Business is bound by the specified environment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Organisation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Organisation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Relationships describing which organisation is bound by the specified environment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#申请 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Apply">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Patent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Describe the relationship between the two business</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Field -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Field">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:comment>Describe the relationship between the two field</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Product -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>Describe the relationship between the two product</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Organization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Describe the relationship between the two organisations</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#竞争 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Contest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#签署 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Signatures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#管理 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Manage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Work_in"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describes the relationship between the Managers of the Enterprise for which People is specified.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Participate_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Participate_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Describe the Business in which the named organisation is involved.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization_Locate_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization_Locate_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:comment>Describe the environment in which the specified organisation operates</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#维护服务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Maintenance_Services">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Evnet_Relationship"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterpriserelated_people -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise_Related_People">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Related_People"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:comment>Description specifies which People Enterprise is associated with.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#In_The_Field_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#In_The_Field_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field"/>
+        <rdfs:comment>Describes the relationship that specifies which particular Field the organisation belongs to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Develop_Product -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Develop_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>Relationships describing which Product is produced for a given organisation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provide_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provide_Business">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Participate_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Description specifies which Business Enterprise is involved in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provide_Value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business_Provide_Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value"/>
+        <rdfs:comment>Describes which Business generated the specified service Service Value</rdfs:comment>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Provide_Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value"/>
+        <rdfs:comment>Describes which Enterprise generated the specified service Service Value</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Company -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Company">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:comment>Describe the relationship between two Enterprises</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Document -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Document">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:comment>Describes which Document is associated with the specified Business or Enterprise process.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Policy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Related_Policy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environmental_Constraints_Organisation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy"/>
+        <rdfs:comment>Relationships describing which organisation is bound by the specified Policy</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Support_Business -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Support_Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Description specifies which Business the Product support implements.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Related_People -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organisation_Related_People">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People"/>
+        <rdfs:comment>Description specifies which People the organisation is associated with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#APP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#APP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Software"/>
+        <rdfs:comment>Refers to mobile applications, a type of software</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Service activity, the interaction between the consumer and the Provider to realize the service Service Value Interaction</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Agency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Organizations with a strong thematic focus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business">
+        <rdfs:comment>A core element of a service that describes the interaction between the consumer and the Provider of the service.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Contract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Contract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:comment>The business rules that inform the execution of Business activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Organizations with the same thematic responsibilities within Enterprise</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document">
+        <rdfs:comment>One of the constituent elements of a service, Document is created, processed and exchanged by service customers and Providers, Document participates in the activities of Business, or is generated by the activities of Business.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Enterprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization"/>
+        <rdfs:comment>Organisations of a strong commercial nature</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment">
+        <rdfs:comment>Objective conditions under which the organization and Business exist.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Field">
+        <rdfs:comment>Abstract categories to which Organisation or Business belongs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Description of Executable Business Activities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:comment>A governmental agency that unifies the actions of enterprises and businesses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>Products that support services through physical means</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:comment>Location</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Organization">
+        <rdfs:comment>One of the elements of the service, the participants of the service</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Patent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Patent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Document"/>
+        <rdfs:comment>Product&apos;s Intellectual Property Statement</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#People">
+        <rdfs:comment>Constituents of the organisation, sometimes participants in Business</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Environment"/>
+        <rdfs:comment>Rules that guide or constrain the organisation and Business</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product">
+        <rdfs:comment>One of the elements of the service, the carrier of the service, realisation of the service through Product</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Business"/>
+        <rdfs:comment>Aggregation of business activities that accomplish the same Business goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value">
+        <rdfs:comment>Service Value realized through Business</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value_Chain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Service_Value_Chain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Action"/>
+        <rdfs:comment>Description of the service Service Value exchange activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+        <rdfs:comment>Products that support services by means of digital electricity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Technical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Technical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNewEnglish#Product"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
