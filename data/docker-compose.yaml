@@ -1,0 +1,15 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:3.5.32
+    container_name: BEAR_Neo4j
+    ports: 
+      - 7687:7687
+      - 7474:7474
+    volumes:
+      - $PWD/data:/data
+
+    environment:
+      NEO4J_AUTH: neo4j/111111
+    networks:
+      - BEAR_Neo4j
