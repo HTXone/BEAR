@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/79931/ontologies/ontoNew#"
+     xml:base="http://www.semanticweb.org/79931/ontologies/ontoNew"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#上线 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#上线">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#APP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务产生的价值 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务产生的价值">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#价值"/>
+        <rdfs:comment>描述哪个价值为指定业务流程所产生的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联企业 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联企业">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联组织"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述哪个企业与指定业务相关的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联组织 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联组织">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>描述哪个组织与指定业务相关的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务所属领域 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务所属领域">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:comment>描述了哪个领域为指定业务的所属类别的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务所需资源 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务所需资源">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>描述哪个资源为指定业务过程的支撑构件的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务过程文件 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务过程文件">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:comment>描述哪个文件与指定业务过程相关的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#交换价值 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#交换价值">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述两个业务间存在价值交换关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#产生价值的业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#产生价值的业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#价值"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述哪个业务产生了指定的服务价值</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#人物参与的业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#人物参与的业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述指定人物参与到哪个业务过程中</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#人物隶属组织 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#人物隶属组织">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>描述指定人物隶属于哪个组织的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业位于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业位于">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织所处环境"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#地点"/>
+        <rdfs:comment>描述指定企业所处的物理空间坐标</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业定增 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业定增">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业所属领域 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业所属领域">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织所属领域"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:comment>描述指定企业属于哪个特定领域的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业提供业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业提供业务">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织参与业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述指定企业参与到哪个业务当中</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业相关人物 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业相关人物">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织相关人物"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:comment>描述指定企业与哪个人物相关</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#使用业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#使用业务">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#使用者 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#使用者">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联企业"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述哪个企业为达成目标使用了指定的业务的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#使用资源 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#使用资源">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#依赖信息 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#依赖信息">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务过程文件"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:comment>描述哪个文件被指定业务执行过程中所依赖的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#依赖资源 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#依赖资源">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关资源"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>描述两个资源间的依赖关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#入驻 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#入驻">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#地点"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#参与项目 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#参与项目">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织参与业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#项目"/>
+        <rdfs:comment>描述指定企业参与到哪个项目当中</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#参股 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#参股">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#发布 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#发布">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#合作 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#合作">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#子业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#子业务">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述两个业务间的父子关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#子领域 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#子领域">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关领域"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:comment>描述两个领域间的父子关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#实施项目 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#实施项目">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业提供业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#项目"/>
+        <rdfs:comment>描述哪个项目被指定企业所实施</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#实现技术 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#实现技术">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织产出资源"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#技术"/>
+        <rdfs:comment>描述哪项技术被指定企业所实现</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#工作于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#工作于">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物隶属组织"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述指定人物工作于哪个企业的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#开发APP -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#开发APP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织产出资源"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#APP"/>
+        <rdfs:comment>描述哪个APP被指定企业所开发</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#开发产品 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#开发产品">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#开放服务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#开放服务">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#形成文件 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#形成文件">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务过程文件"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:comment>描述哪个文件在指定业务过程中产生</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#成立部门 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#成立部门">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#部门"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#投资 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#投资">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#探索 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#探索">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#控股 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#控股">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关企业"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述两个企业间的股权控制关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#提供者 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#提供者">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务关联企业"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述了哪个企业为指定业务的提供者的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#收购 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#收购">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#政府约束企业 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#政府约束企业">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#政府"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#政策管控 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#政策管控">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束组织"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#政策"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述哪个组织被指定的政策所约束的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#政策规定 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#政策规定">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束业务"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#政策"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述哪个业务被指定的政策所约束的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#文件关联业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#文件关联业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述指定文件与哪个业务相关的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#旗下企业 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#旗下企业">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关企业"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#注册 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#注册">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#机构"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#注册于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#注册于">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#地点"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述哪个业务被指定环境内容所约束</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束组织 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#环境约束组织">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>描述哪个组织被指定的环境所约束的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#申请 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#申请">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#专利"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#相关业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#相关业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述两个业务间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#相关企业 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#相关企业">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#相关组织"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述两个企业间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#相关组织 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#相关组织">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>描述两个组织间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#相关资源 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#相关资源">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>描述两个资源间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#相关领域 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#相关领域">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:comment>描述两个领域间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#竞争 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#竞争">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#签署 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#签署">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#项目"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#管理 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#管理">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#工作于"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:comment>描述指定人物为哪个企业的管理者的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织产出资源 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织产出资源">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>描述哪个资源为指定组织所生产的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织参与业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织参与业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述指定组织参与到哪个业务当中</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织所处环境 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织所处环境">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境"/>
+        <rdfs:comment>描述指定企业所处的环境</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织所属领域 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织所属领域">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#领域"/>
+        <rdfs:comment>描述指定组织属于哪个特定领域的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织相关人物 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织相关人物">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#人物"/>
+        <rdfs:comment>描述指定组织与哪个人物相关</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#维护服务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#维护服务">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#事件关系"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#企业"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#资源支撑业务 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#资源支撑业务">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>描述指定资源支撑实现了哪个业务</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#APP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#APP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#软件"/>
+        <rdfs:comment>指移动应用程序, 软件的一种</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#专利 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#专利">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:comment>资源的知识产权声明</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#业务 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#业务">
+        <rdfs:comment>服务的核心要素, 描述服务中, 消费者与提供者的交互活动.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#人物 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#人物">
+        <rdfs:comment>组织的构成者,业务的参与者</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#价值 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#价值">
+        <rdfs:comment>通过业务实现的服务价值</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#价值链 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#价值链">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#活动"/>
+        <rdfs:comment>服务价值交换活动的描述</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#企业 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#企业">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>具有强商业性质的组织</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#功能 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#功能">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>可执行的业务活动的描述</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#合同 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#合同">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#文件"/>
+        <rdfs:comment>业务活动执行时所参考的商业规则</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#地点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#地点">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境"/>
+        <rdfs:comment>物理空间点</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#岗位 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#岗位">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>人力资源的描述</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#技术 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#技术">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#政府 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#政府">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#管理部门"/>
+        <rdfs:comment>国家或地区的官方管理组织</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#政策 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#政策">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#环境"/>
+        <rdfs:comment>对组织和业务起指导或约束作用的抽象规则</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#文件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#文件">
+        <rdfs:comment>服务的构成要素之一, 文件由服务客户和提供商创建、处理和交换, 文件参与业务的活动, 或由业务活动产生</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#机构 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#机构">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>具有强主题性的组织</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#活动 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#活动">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>服务活动, 消费者与提供者实现服务价值交互的交互</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#环境 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#环境">
+        <rdfs:comment>组织与业务存在所依托的客观条件</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#硬件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#硬件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>通过物理方式支持服务的资源体</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#管理部门 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#管理部门">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#机构"/>
+        <rdfs:comment>对企业与业务的行为起到统一管理作用的机构</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#组织 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#组织">
+        <rdfs:comment>服务的要素之一, 服务的参与者</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#资源 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#资源">
+        <rdfs:comment>服务的要素之一, 服务的承载体, 通过资源实现服务</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#软件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#软件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#资源"/>
+        <rdfs:comment>通过数电方式支持服务的资源体</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#部门 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#部门">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#组织"/>
+        <rdfs:comment>企业内具有同一主题职责的组织</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#项目 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#项目">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/79931/ontologies/ontoNew#业务"/>
+        <rdfs:comment>完成同一业务目标的业务活动的集合体</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/79931/ontologies/ontoNew#领域 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79931/ontologies/ontoNew#领域">
+        <rdfs:comment>组织与业务所属的抽象行为类别</rdfs:comment>
+    </owl:Class>
+    
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
