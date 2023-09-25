@@ -26,7 +26,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Service_Value_Generated_by_Business">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Service_Value"/>
-        <rdfs:comment>Describes which Service Value generates the relationship for the specified Business process.</rdfs:comment>
+        <rdfs:comment>Describes which service value generates the relationship for the specified business process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -37,7 +37,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business_Affiliates_Organization"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
-        <rdfs:comment>Describes which Enterprise is related to the specified Business.</rdfs:comment>
+        <rdfs:comment>Describes which Enterprise is associated with the specified Business.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -52,12 +52,12 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business所属Field -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business belongs to Field -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business_Belongs_to_Field">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Field"/>
-        <rdfs:comment>Describes the relationship between which Field is the category to which the specified Business belongs.</rdfs:comment>
+        <rdfs:comment>Describes the relationship between which field is the specified Business belongs.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -78,7 +78,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organization_Locate_in"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Location"/>
-        <rdfs:comment>Description specifies the coordinates of the physical space in which Enterprise is located.</rdfs:comment>
+        <rdfs:comment>Description specifies the coordinates of the physical space where the enterprise is located.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -93,7 +93,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise所属Field -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise Belongs to Field -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise_Belongs_to_Field">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#In_The_Field_of"/>
@@ -106,10 +106,10 @@
 
     <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document_Association_Business -->
 
-    <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document_Association_Business">
+    <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document_Associate_Business">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
-        <rdfs:comment>Describes the relationship between the specified File and the Business.</rdfs:comment>
+        <rdfs:comment>Describes the relationship between the specified Document and the Business.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -119,7 +119,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People_Participate_in_Business">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
-        <rdfs:comment>Description specifies which Business process People are involved in.</rdfs:comment>
+        <rdfs:comment>Description specifies the Business process that the person are involved in.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -129,7 +129,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People_Affiliated_Organisations">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organization"/>
-        <rdfs:comment>Description Specifies the relationship of the organisation to which People belongs.</rdfs:comment>
+        <rdfs:comment>Description Specifies the relationship of the organisation that the Person work for.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -203,7 +203,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#依赖Product -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Dependency Product -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Dependency_Product">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Related_Product"/>
@@ -225,9 +225,9 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enter_and_Garrison -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Establish -->
 
-    <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enter_and_Garrison">
+    <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Establish">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Location"/>
@@ -241,7 +241,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organisation_Participate_Business"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Project"/>
-        <rdfs:comment>Description specifies which project Enterprise is involved in.</rdfs:comment>
+        <rdfs:comment>Description specifies which project Enterprise is participate in.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -315,7 +315,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Develop_Product"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Technical"/>
-        <rdfs:comment>Describe which technology is implemented by the given Enterprise.</rdfs:comment>
+        <rdfs:comment>Describe which technology is implemented by the Enterprise.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -331,13 +331,13 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#开发APP -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Developing_APP -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Developing_APP">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Develop_Product"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#APP"/>
-        <rdfs:comment>描述哪个APP被指定Enterprise所开发</rdfs:comment>
+        <rdfs:comment>Describe the relationship of the Enterprise Develop App</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -368,12 +368,12 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Related_Document"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document"/>
-        <rdfs:comment>Describes which File is generated during the specified Business process.</rdfs:comment>
+        <rdfs:comment>Describes which Document is generated during the specified Business process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#成立部门 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Establishment_of -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Establishment_of">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -383,7 +383,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#投资 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Investors -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Investors">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -393,7 +393,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#探索 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Discovery -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Discovery">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -403,7 +403,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#控股 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Holdings -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Holdings">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Related_Company"/>
@@ -414,7 +414,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#提供者 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Provider -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Provider">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business_Affiliates_Enterprise"/>
@@ -425,7 +425,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#收购 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Buy -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Buy">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -435,7 +435,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#政府约束Enterprise -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Government_Constraints_Enterprise -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Government_Constraints_Enterprise">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -445,7 +445,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#旗下Enterprise -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Under_The_Name_of -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Under_The_Name_of">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Related_Company"/>
@@ -455,7 +455,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#注册 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Register -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Register">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -465,7 +465,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#注册于 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Registered_in -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Registered_in">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -480,7 +480,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Environmental_Constraints_Business">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Environment"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
-        <rdfs:comment>Relationships describing which Business is bound by the specified environment</rdfs:comment>
+        <rdfs:comment>Describes the relationship of which Business is bound by the specified environment</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -490,7 +490,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Environmental_Constraints_Organisation">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Environment"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organization"/>
-        <rdfs:comment>Relationships describing which organisation is bound by the specified environment</rdfs:comment>
+        <rdfs:comment>Describes the relationship of which organisation is bound by the specified environment</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -545,7 +545,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#竞争 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Contest -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Contest">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -555,7 +555,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#签署 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Signatures -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Signatures">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -565,13 +565,13 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#管理 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Manage -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Manage">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Work_in"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
-        <rdfs:comment>Describes the relationship between the Managers of the Enterprise for which People is specified.</rdfs:comment>
+        <rdfs:comment>Describes the relationship between the Managers of the Enterprise.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -581,7 +581,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organisation_Participate_Business">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organization"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
-        <rdfs:comment>Describe the Business in which the named organisation is involved.</rdfs:comment>
+        <rdfs:comment>Describe the Business in which the organisation is involved.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -596,7 +596,7 @@
     
 
 
-    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#维护服务 -->
+    <!-- https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Maintenance_Services -->
 
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Maintenance_Services">
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Evnet_Relationship"/>
@@ -612,7 +612,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organisation_Related_People"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#People"/>
-        <rdfs:comment>Description specifies which People Enterprise is associated with.</rdfs:comment>
+        <rdfs:comment>Description specifies which Enterprise the Person is associated with.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -622,7 +622,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#In_The_Field_of">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Field"/>
-        <rdfs:comment>Describes the relationship that specifies which particular Field the organisation belongs to</rdfs:comment>
+        <rdfs:comment>Describes the relationship which Field the organisation belongs to</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -632,7 +632,7 @@
     <owl:ObjectProperty rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Develop_Product">
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Product"/>
-        <rdfs:comment>Relationships describing which Product is produced for a given organisation</rdfs:comment>
+        <rdfs:comment>Describes the relationship of which Product is produced for the organisation</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -643,7 +643,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Organisation_Participate_Business"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
-        <rdfs:comment>Description specifies which Business Enterprise is involved in.</rdfs:comment>
+        <rdfs:comment>Description specifies which Business the Enterprise is involved in.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -681,7 +681,7 @@
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Business"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document"/>
-        <rdfs:comment>Describes which Document is associated with the specified Business or Enterprise process.</rdfs:comment>
+        <rdfs:comment>Describes which Document is associated with the Business or Enterprise process.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -692,7 +692,7 @@
         <rdfs:subPropertyOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Environmental_Constraints_Organisation"/>
         <rdfs:domain rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Enterprise"/>
         <rdfs:range rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Policy"/>
-        <rdfs:comment>Relationships describing which organisation is bound by the specified Policy</rdfs:comment>
+        <rdfs:comment>Describes the relationship of which organisation is bound by the specified Policy</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -862,7 +862,7 @@
 
     <owl:Class rdf:about="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Patent">
         <rdfs:subClassOf rdf:resource="https://anonymous.4open.science/r/BEAR-972E/Ontology/Service_Domain_Ontology#Document"/>
-        <rdfs:comment>Product&apos;s Intellectual Property Statement</rdfs:comment>
+        <rdfs:comment>Products Intellectual Property Statement</rdfs:comment>
     </owl:Class>
     
 
