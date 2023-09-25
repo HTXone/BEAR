@@ -1,0 +1,94 @@
+{
+    "KnowledgeSearch": [
+        {
+            "role": "system",
+            "content": "As a search engine model, your task is to search for the knowledge users need and return the data in Chinese in the form of encyclopedia introductions."
+        },
+        {
+            "role": "user",
+            "content": "Please search for the related information of the '{}' that is named '{}' in these concepts {}, and return the data in Chinese in the form of an encyclopedia introduction, each information is about 100 characters."
+        }
+    ],
+    "EventKnowledge": [
+        {
+            "role": "system",
+            "content": "As an event knowledge extraction model, your task is to extract relevant event knowledge from the provided information, and return the result in Chinese according to the specified format."
+        },
+        {
+            "role": "user",
+            "content": "From the following information, You need to extract the event knowledge of these knowledge concept:{}, and return the results in the following table format for the extraction results:\n事件关系抽取结果表：\n|实体1（实体类型）|关系|实体2（实体类型）|时间(若没有填无)|\n|---|---|---|---|\n...\n\nPerform event knowledge extraction on the following information according to the above content and return the result table in Chinese:"
+        }
+    ],
+    "TextKnowledge": [
+        {
+            "role": "system",
+            "content": "As a knowledge extraction model, your task is to extract entities and their corresponding attributes and relationships from the given information, and return the results in Chinese."
+        },
+        {
+            "role": "user",
+            "content": "From the following information, You need to extract the entities of these knowledge concept: {}, and extract the relationship of above entities with only these triples concept:  {}, and extract the attribute information of above entities: {}, and return the results in the following example table format for the three extraction results.\nexample:\n实体抽取结果：\n|实体类型|实体名称|\n|---|---|\n|企业|百度|\n...\n\n关系抽取结果：\n|具体实体|实体间关系|具体实体|\n|---|---|---|\n|百度|企业提供业务|搜索引擎|\n...\n\n属性抽取结果：\n|实体的名字|属性|属性值|\n|---|---|---|\n|百度|创立时间|2011年|\n...\n\nPerform knowledge extraction on the following information according to the above content and return the result table in Chinese:\n"
+        }
+    ],
+    "LittleQuestionForNode": {
+        "generalPompt": [
+            {
+                "role": "system",
+                "content": "Extract relevant knowledge from information and return results in the specified format"
+            },
+            {
+                "role": "user",
+                "content": "Please identify the {target} {link} the {source} which named '{name}', in it's introduction, and return the results in the specified format in Chinese.\nResult example:\n|{head1}|{head2}|\n|---|---|\n|百度|搜索引擎|\n|百度|语言翻译|\nPlease follow the above requirements to process the following introduction and return the results in Chinese: {questionInfo}"
+            }
+        ],
+        "EnterpriseToBusiness": {
+            "source": "Enterprise",
+            "target": "Business",
+            "link": "associated to",
+            "head1": "企业名称",
+            "head2": "关联业务"
+        },
+        "APPToBusiness": {
+            "source": "APP",
+            "target": "Business",
+            "link": "provided by",
+            "head1": "APP名称",
+            "head2": "提供业务"
+        }
+    },
+    "BussinessSplit": [
+        {
+            "role": "system",
+            "content": "Please split the business content of the given business description and return the result in a list"
+        },
+        {
+            "role": "user",
+            "content": "LED照明系列产品的研发、生产、销售、工程设计、安装及服务"
+        },
+        {
+            "role": "assistant",
+            "content": "[LED照明系列产品研发,LED照明系列产品生产,LED照明系列产品销售,LED照明系列产品工程设计,LED照明系列产品安装,LED照明系列产品服务]"
+        },
+        {
+            "role": "user",
+            "content": "{info}"
+        }
+    ],
+    "BussinessSplitAPP": [
+        {
+            "role": "system",
+            "content": "Please split the service content of the given service description and return the result in a list"
+        },
+        {
+            "role": "user",
+            "content": "提供文玩社区服务，用户可以通过发布图文来记录自己的文玩生活，结交更多的玩友；玩友间可以出售、拍卖自己的闲置文玩宝贝，与玩友分享文玩知识；逐步引进几千位匠人和新锐大师，更加完善集市和拍卖功能。"
+        },
+        {
+            "role": "assistant",
+            "content": "[文玩社区服务,文玩博客,文玩交友,文玩交易,文玩论坛,文玩集市,文玩拍卖]"
+        },
+        {
+            "role": "user",
+            "content": "{info}"
+        }
+    ]
+}
