@@ -21,3 +21,26 @@ Microsoft: https://chat.openai.com/share/20698909-3b1f-4e16-883c-87051815d7ed
 
 Alphabet: https://chat.openai.com/share/2dffe660-8260-4595-9681-c5d10989793f
 
+
+
+```
+BEAR
+├── data	%Data of BEAR
+│	└── BEAR.json   %Json data of BEAR 
+├── Ontology		%Ontology of BEAR
+│	├── Chinese     
+│	└── English 
+├── Prompt		%Prompt of BEAR
+│	└── prompt.json
+├── Picture			%ChatGPT experiment result
+│	├── NERAnswer.png 
+│	├── REAnswer.png
+│	├── SearchAnswer_Amazon.png
+│	├── SearchAnswer_Apple.png
+│	├── SearchAnswer_Meta.png
+│	├── SearchAnswer_Microsoft.png
+|	├── SearchAnswer_Alphabet.png
+│	└── GPTResultLink.md
+└── README.md
+```
+
